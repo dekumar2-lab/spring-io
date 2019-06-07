@@ -1,0 +1,11 @@
+custom:
+  initializr:
+    dependencies:
+      - name: Custom Dependencies
+        content:
+          - name: Custom dependency
+            id: custom-dependency
+            groupId: your.domain
+            artifactId: custom-artifact
+            starter: false
+            description: My first custom dependency for the Spring Initializr

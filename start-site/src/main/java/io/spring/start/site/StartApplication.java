@@ -41,7 +41,8 @@ import org.springframework.scheduling.annotation.EnableAsync;
  */
 @EnableAutoConfiguration
 @SpringBootConfiguration
-@Import(ProjectDescriptionCustomizerConfiguration.class)
+@Import({ ProjectDescriptionCustomizerConfiguration.class,
+		CustomInitializrConfiguration.class })
 @EnableCaching
 @EnableAsync
 public class StartApplication {
